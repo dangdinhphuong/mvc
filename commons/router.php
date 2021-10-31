@@ -17,7 +17,6 @@ $router->filter('auth', function(){
     }
 });
 
-
 # kết thúc định nghĩa filter
 $router->group(['prefix'=>'admin'],function ($router){
     $router->get('/', [HomeController::class, "index"]);

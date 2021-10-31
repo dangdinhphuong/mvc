@@ -14,10 +14,7 @@ class ProductController extends BaseController{
         $product = Product::find($id);
         $product->load('category');
         print_r($product);
-
     }
-
 }
-
 
 ?>
